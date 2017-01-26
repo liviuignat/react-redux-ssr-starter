@@ -1,0 +1,16 @@
+.idea
+.git
+.gitignore
+.flowconfig
+.editorconfig
+.eslintrc
+.eslintignore
+.gitlab-ci.yml
+.travis.yml
+coverage
+node_modules
+README.md
+src/static/dist
+webpack-assets.json
+webpack-stats.json
+*.log

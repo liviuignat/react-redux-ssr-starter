@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - "v6.9.2"
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+before_script:
+  - "yarn install"
+
+script:
+  - "flow"
+  - "yarn lint"
+  - "yarn test-once"

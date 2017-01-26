@@ -1,0 +1,9 @@
+.idea
+.git
+*.log
+.DS_Store
+node_modules
+coverage
+src/static/dist/
+webpack-assets.json
+webpack-stats.json
