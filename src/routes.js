@@ -7,10 +7,8 @@ import {DashboardPage} from 'universal/home/pages';
 
 export function getRoutes() {
   return (
-    <Route path="/">
-      <Route path="properties" component={AppContainer}>
-        <IndexRoute component={DashboardPage} />
-      </Route>
+    <Route path="/" component={AppContainer}>
+      <IndexRoute component={DashboardPage} />
     </Route>
   );
 }

@@ -5,7 +5,7 @@ import Helmet from 'react-helmet';
 import {asyncConnect as connect} from 'redux-connect';
 import {getAppMetadata} from 'appMetadata';
 import {getDefaultMuiTheme} from 'theme/materialTheme';
-import {LinearProgress, MuiThemeProvider, getMuiTheme} from 'universal/common/components';
+import {Header, Footer, LinearProgress, MuiThemeProvider, getMuiTheme} from 'universal/common/components';
 
 const asyncActions = [{
   promise: () => Promise.resolve(),
@@ -43,9 +43,13 @@ const AppContainer = (props: any, context: any) => {
           mode="indeterminate"
         />
 
+        <Header />
+
         <div className={css.MainChildrenContainer}>
           {children}
         </div>
+
+        <Footer />
       </div>
     </MuiThemeProvider>
   );

@@ -4,30 +4,31 @@
 
 #### Install Commands
 
-After running visit http://localhost:9300/properties
+After running visit http://localhost:9300
 
 ```sh
 # Install
-npm install flow-bin -g
-npm install
+yarn install flow-bin -g
+yarn install
 
 # Run in prod
-npm run build        # run webpack build
-npm run start        # start NodeJS server
+yarn build        # run webpack build
+yarn start        # start NodeJS server
 
 # Run in dev
+yarn build       # IMPORTANT! run webpack build before starting dev server
 # run and watch dev which will
 #  - start the app in 'development' mode
 #  - hot reload server and client
 #  - watch and run eslint and flow
-npm run dev
-npm run test         # run and watch tests
-npm run test-once    # run tests once
-flow                 # check with flow for errors
+yarn dev
+yarn test         # run and watch tests
+yarn test-once    # run tests once
+flow              # check with flow for errors
 ```
 
 #### Docker Commands
-Adter docker run visit http://localhost:9300/properties
+Adter docker run visit http://localhost:9300
 
 ```sh
 docker build -t er-prism .
