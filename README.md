@@ -8,7 +8,7 @@ After running visit http://localhost:9300
 
 ```sh
 # Install
-yarn install flow-bin -g
+yarn add flow-bin -g
 yarn install
 
 # Run in prod
